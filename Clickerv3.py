@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import *
 window = tk.Tk()
-window.title('Clickerv1.py')
+window.title('Clickerv3.py')
 window.geometry('250x250')
 window.counter = 0
 LastClick = 'white'
@@ -39,12 +39,10 @@ def LeaveButton(event):
 def CounterTimesThree(event):
     window.counter *= 3
     WindowCounterLabel['text'] = window.counter
-    print('d')
 
 def CounterDividesByThree(event):
     window.counter /= 3
     WindowCounterLabel['text'] = window.counter
-    print('a')
 
 WindowUpButton = Button(window, text = 'Up', command = UpButton)
 WindowUpButton.pack(fill = 'x',pady = 15)

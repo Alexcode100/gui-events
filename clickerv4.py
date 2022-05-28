@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import *
 window = tk.Tk()
-window.title('Clickerv1.py')
+window.title('Clickerv4.py')
 window.geometry('250x250')
 window.counter = 0
 LastClick = 'white'

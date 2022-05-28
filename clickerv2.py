@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import *
 window = tk.Tk()
-window.title('Clickerv1.py')
+window.title('Clickerv2.py')
 window.geometry('250x250')
 window.counter = 0
 LastClick = 'white'
@@ -33,13 +33,6 @@ def DownButton():
     WindowCounterLabel['text'] = window.counter
     Color()
 
-def CounterTimesThree(event):
-    window.counter * 3
-    WindowCounterLabel['text'] = window.counter
-    print('d')
-def CounterDividesByThree():
-    window.counter / 3
-
 WindowUpButton = Button(window, text = 'Up', command = UpButton)
 WindowUpButton.pack(fill = 'x',pady = 15)
 WindowCounterLabel = Label(window, text = '0')
@@ -47,9 +40,6 @@ WindowCounterLabel.pack()
 
 WindowCounterLabel.bind('<Enter>', enterButton)
 WindowCounterLabel.bind('<Leave>', LeaveButton)
-
-WindowCounterLabel.bind('<Double-Button-1>', CounterTimesThree)
-
 
 WindowDownButton = Button(window, text = 'Down', command = DownButton)
 WindowDownButton.pack(fill = 'x',pady = 15)
